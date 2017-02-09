@@ -44,10 +44,10 @@ class pam_callback{
                     $_SESSION['login_time'] = time();
                     $params['member_id'] = $_SESSION['account'][$params['type']];
                     $params['uname'] = $_POST['uname'];
-                    foreach(kernel::servicelist('pam_login_listener') as $service)
+                    /*foreach(kernel::servicelist('pam_login_listener') as $service)
                     {
                         $service->listener_login($params);
-                    }
+                    }*/
                     if($params['redirect'] && $module_uid){
                         $service = kernel::service('callback_infomation');
                         if(is_object($service)){

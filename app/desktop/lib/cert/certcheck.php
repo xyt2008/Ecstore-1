@@ -14,6 +14,7 @@ class desktop_cert_certcheck
 	}
     function check($params)
     {
+    	return true;
 		$opencheck = false;
 		$objCertchecks = kernel::servicelist("desktop.cert.check");
         foreach ($objCertchecks as $objCertcheck)

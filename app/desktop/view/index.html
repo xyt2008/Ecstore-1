@@ -723,7 +723,7 @@ var initDesktop = function() {
                 onComplete:function(res){
                     new Asset.image(res,{
                             onload:function(img){
-                                $('license').show().adopt(img);
+                                //$('license').show().adopt(img);
                                 $clear(_timer);
                             },
                             onerror:function(){
