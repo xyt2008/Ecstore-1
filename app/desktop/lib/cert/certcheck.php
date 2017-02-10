@@ -140,9 +140,9 @@ class desktop_cert_certcheck
 			}
             else
             {
-                $url = $this->app->base_url(1);
+                /*$url = $this->app->base_url(1);
                 $code_url = $url.'index.php?app=desktop&ctl=code&act=error_info_view&result[msg]='.$result['msg'];
-                echo "<script>location.href='".$code_url."'</script>";exit;
+                echo "<script>location.href='".$code_url."'</script>";exit;*/
             }
         }
 	}
