@@ -47,7 +47,9 @@ class entermembercenter_auth_use
 			$render = kernel::single('base_render');
 			$render->pagedata['enterprise_url'] = SHOP_USER_ENTERPRISE;
 			$render->pagedata['callback_url'] = base64_encode(kernel::router()->app->base_url(1).'index.php?app=entermembercenter&ctl=register&act=active');
-			return $render->fetch('login_verify.html', 'entermembercenter');
+
+			return '';
+			//return $render->fetch('login_verify.html', 'entermembercenter');
 		}else{		
             //app::get('entermembercenter')->setConf('last_certifi_check', time());
 			return '';
