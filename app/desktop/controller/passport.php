@@ -20,14 +20,14 @@ class desktop_ctl_passport extends desktop_controller{
 
     function index(){
 		/** 登录之前的预先验证 **/
-        if(!defined("STRESS_TESTING")){
+        /*if(!defined("STRESS_TESTING")){
 		$obj_services = kernel::servicelist('app_pre_auth_use');
 		foreach ($obj_services as $obj){
 			if (method_exists($obj, 'pre_auth_uses') && method_exists($obj, 'login_verify')){
 				$this->pagedata['desktop_login_verify'] = $obj->login_verify();
 			}
 		}
-        }
+        }*/
 		/** end **/
 
         //在登录页面时，验证码之后,可实现的servicelist
